@@ -415,3 +415,6 @@ Create new remote branch from remote branch
 git push origin :<branchname> 
 ```
 Delete the remove branch
+
+### Configuring Merge Tool
+http://www.andymcintosh.com/?p=33
