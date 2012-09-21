@@ -21,15 +21,15 @@ Stored in .git/config in each repo
 ### How to configure
 
 git config --global --list
-
 git config --global user.name "UserNameHere"
 git config --global user.email "email@host.com"
 git config --global core.editor vim
-git config --global help.autocorrect 1 // Fixes dodgy typing 
-git config --global color.ui auto 
+git config --global help.autocorrect 1 // Fixes dodgy typing
+git config --global color.ui auto
 git config --global core.autocrlf input
-  Windows -- true
-  Mac / Linux -- input 
+
+      Windows -- true
+      Mac / Linux -- input 
 
 ### Using
 
