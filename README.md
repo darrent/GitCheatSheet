@@ -109,32 +109,36 @@ adds modified files at the same time
 ### Committing Specific Files
 
 ```bash
-git add <filename> // git status will show the file as tracked
+git add <filename> 
 git commit -m "description"
 ```
+git status will show the file as tracked
 
 ### Undoing Changes
 
 ### By File
 
 ```bash
-git checkout <filename> // pulls the file from the HEAD version
+git checkout <filename> 
 ```
+pulls the file from the HEAD version
 
 ### All
 
 ```bash
-git reset --hard // 
+git reset --hard  
 ```
 Reset the working copy back to the head
 
 ```bash
-git reset --soft HEAD~1 // Reset the working copy back to a sha
+git reset --soft HEAD~1 
 ```
+Reset the working copy back to a sha
 
 ```bash
-git reset --hard HEAD~1 // Discard the changes made in the commit
+git reset --hard HEAD~1 
 ```
+Discard the changes made in the commit
 
 ### Remove files -> Remove stay files from your working copy.
 
@@ -190,8 +194,9 @@ git remote
 ```
 
 ```bash
-git remote -v // verbose
+git remote -v 
 ```
+verbose
 
 ### Removing Remotes
 
@@ -206,8 +211,9 @@ git branch
 ```
 
 ```bash
-git branch -r // show remote branches
+git branch -r 
 ```
+show remote branches
 
 ### Showing Tags (Stable points in the codebase)
 
@@ -216,8 +222,9 @@ git tag
 ```
 
 ```bash
-git tag -v <tagname> // verify signed tag
+git tag -v <tagname> 
 ```
+verify signed tag
 
 ### Adding a remote branch
 You can add a remote branch (mutiple remotes) when someone sends a pull request to examine their changes.
@@ -229,25 +236,29 @@ git remote add <origin> <location>
 ### Getting Changes
 
 ```bash
-git fetch // pull down the changes from a remote repo.  Does not incorporate changes
+git fetch 
 ```
+Pull down the changes from a remote repo.  Does not incorporate changes
 
 ```bash
 git fetch <remote>
 ```
 
 ```bash
-git pull // short cut for git fetch, git merge
+git pull 
 ```
+Short cut for git fetch, git merge
 
 ```bash
-git pull <remotebranch> <localbranch> // If tracking has not been set.  Cloning does this automatically.
+git pull <remotebranch> <localbranch> 
 ```
+If tracking has not been set.  Cloning does this automatically
 
 ### Merging Changes
 ```bash
-git merge <remote> // merge changes from remote branch into local branch
+git merge <remote> 
 ```
+merge changes from remote branch into local branch
 
 ### Associate a branch with a remote branch
 ```bash
@@ -256,20 +267,24 @@ git branch --set-upstream master origin/master
 ### Adding Tags
 Friendly name for a sha1 hash.
 ```bash
-git tag <name> //unsigned tag
+git tag <name> 
 ```
+unsigned tag
 
 ```bash
 git tag v1.0
 ```
 
 ```bash
-git tag -a message // with annotation
+git tag -a message 
 ```
+with annotation
 
 ```bash
-git tag -s v1.0 // automatically requires a message.  Passphrase required for signing key.
+git tag -s v1.0 
 ```
+Automatically requires a message.  Passphrase required for signing key.
+
 ### Pushing Tags
 By default git does not push tags
 
@@ -335,16 +350,19 @@ git stash apply
 ```
 
 ```bash
-git stash pop // apply the last stash
+git stash pop 
 ```
+apply the last stash
 
 ```bash
-git stash drop // drop reference to a stash
+git stash drop 
 ```
+drop reference to a stash
 
 ```bash
-git stash branch <x> // Create branch from stash, check it out and apply.
+git stash branch <x> 
 ```
+Create branch from stash, check it out and apply
 
 ### Merging
 
@@ -368,26 +386,32 @@ git rebase <targetbranchname>
 If you can conficts when merging.  
   
 ```bash
-git mergetool // resolve the conflict
+git mergetool 
 ```
+resolve the conflict
 
 ```bash
 git rebase --continue
 ```
+
 ### Cherry Pick Branch
 ```bash
-git cherry-pick <sha> // select a single commit and apply it.
+git cherry-pick <sha> 
 ```
+select a single commit and apply it.
 
 ### Remote Branches
 ```bash
-git push origin <branchname> // Push creating a new remote branch
+git push origin <branchname> 
 ```
+Push creating a new remote branch
 
 ```bash
-git push origin <branchname>:<branchname> // Create new remote branch from remote branch
+git push origin <branchname>:<branchname> 
 ```
+Create new remote branch from remote branch
 
 ```bash
-git push origin :<branchname> // Delete the remove branch
+git push origin :<branchname> 
 ```
+Delete the remove branch
