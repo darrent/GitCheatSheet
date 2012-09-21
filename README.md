@@ -1,10 +1,14 @@
-# Git
+Git
+===
 
-## Configuration
+Configuration
+----------------
 
 ### System Level
 
+```bash
 git config --system
+```
 
 Stored in /etc/gitconfig or Program Files\Git\etcgitconfig
 
@@ -27,6 +31,7 @@ git config --global core.editor vim
 git config --global help.autocorrect 1 // Fixes dodgy typing
 git config --global color.ui auto
 git config --global core.autocrlf input
+
 
       Windows -- true
       Mac / Linux -- input 
