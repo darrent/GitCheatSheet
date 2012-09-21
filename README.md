@@ -288,15 +288,19 @@ git branch <feature name> <sha>
 ```
 
 ```bash
-git checkout -b <name> // Create and switch branch
+git checkout -b <name> 
 ```
+Create and switch branch
 
 ```bash
-git branch -d <name> // delete branch
+git branch -d <name> 
+```
+delete branch
 
 ```bash
-git branch -D <name> // Force
+git branch -D <name> 
 ```
+Force
 
 ### Recovering Branches
 Commits are around for 30 days by default.
