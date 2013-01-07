@@ -140,6 +140,22 @@ git reset --hard HEAD~1
 ```
 Discard the changes made in the commit
 
+Amend the last commit message
+
+```bash
+git commit --amend
+```
+
+### By Commit
+```bash
+git reset --hard SHA
+```
+
+To remove from github
+```bash
+git push [remote] +[branch]
+```
+
 ### Remove files -> Remove stay files from your working copy.
 
 ```bash
@@ -388,13 +404,28 @@ If you can conficts when merging.
 ```bash
 git mergetool 
 ```
-resolve the conflict
+Resolve the conflict
 
 ```bash
 git rebase --continue
 ```
 
-### Cherry Pick Branch
+Squash mutiple commits into a single commit
+
+```bash
+git rebase i-
+```
+
+```bash
+git rebase i- HEAD~n
+```
+
+* 1 pick c196b54 Feature8
+* 2 squash 7787a9c Feature7
+* 3 squash f771621 Master in the house
+
+You must have root commit to go back to.
+
 ```bash
 git cherry-pick <sha> 
 ```
