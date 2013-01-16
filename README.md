@@ -42,7 +42,7 @@ git config --global user.email "email@host.com"
 ```
 
 ```bash
-git config --global core.editor vim
+git config --global core.editor "subl -w"
 ```
 
 ```bash
