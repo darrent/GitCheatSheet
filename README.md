@@ -301,6 +301,16 @@ git tag -s v1.0
 ```
 Automatically requires a message.  Passphrase required for signing key.
 
+### Removing Tags
+Removing a local tag
+```bash
+git tag -d <name>
+```
+Removing from git hub
+```bash
+git push <remote> :<tagname>
+```
+
 ### Pushing Tags
 By default git does not push tags
 
