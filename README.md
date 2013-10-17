@@ -42,7 +42,7 @@ git config --global user.email "email@host.com"
 ```
 
 ```bash
-git config --global core.editor "subl -w"
+git config --global core.editor "vim"
 ```
 
 ```bash
@@ -176,7 +176,7 @@ git log --oneline | wc -l
 How many commits made?
 
 ```bash
-git log --online --graph
+git log --oneline --graph
 ```
 Adds a graph down the left hand side
 
@@ -455,7 +455,7 @@ Create new remote branch from remote branch
 ```bash
 git push origin :<branchname>
 ```
-Delete the remove branch
+Delete the removed branch
 
 ### Configuring Merge Tool
 http://www.andymcintosh.com/?p=33
