@@ -455,7 +455,7 @@ Create new remote branch from remote branch
 ```bash
 git push origin :<branchname>
 ```
-Delete the removed branch
+Deletes the remote branch
 
 
 ### References
