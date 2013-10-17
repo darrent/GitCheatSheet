@@ -457,5 +457,12 @@ git push origin :<branchname>
 ```
 Delete the removed branch
 
+
+### References
+http://ndpsoftware.com/git-cheatsheet.html
+
+### Work Flow
+https://gist.github.com/jbenet/ee6c9ac48068889b0912
+
 ### Configuring Merge Tool
 http://www.andymcintosh.com/?p=33
